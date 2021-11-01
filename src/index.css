@@ -1,0 +1,28 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+
+
+.content{
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+}
+.container{
+    display:grid;
+    border:solid 1px rgba(0 ,0, 0, 0.3);
+    border-radius: 4rem;
+}
+.container:hover{
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+}
+.pElige{
+    margin-bottom: 2rem;
+}
+
+@media(max-width:680px){
+    .content{
+        grid:auto / auto;
+    }
+}
